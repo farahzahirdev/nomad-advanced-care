@@ -59,10 +59,10 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="nm-hero-bottom">
-        <Credentials />
+        <div className="nm-hero-bottom">
+          <Credentials />
+        </div>
       </div>
     </section>
   );

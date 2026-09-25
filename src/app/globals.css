@@ -361,16 +361,23 @@ li {
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: visible;
   background: #eaf4ee;
 }
 
 .nm-hero-media {
   position: relative;
-  min-height: min(100vh, 860px);
+  min-height: auto;
   display: flex;
   flex-direction: column;
   flex: 1;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .nm-hero-media {
+    min-height: min(100vh, 860px);
+  }
 }
 
 .nm-hero-bg {
@@ -444,21 +451,28 @@ li {
   width: 100%;
   max-width: var(--max-width-content);
   margin: 0 auto;
-  padding: 6.5rem 1rem 3.5rem;
+  padding: 7.25rem 1rem 1.5rem;
   display: flex;
   flex: 1;
-  align-items: center;
+  align-items: flex-start;
 }
 
 @media (min-width: 640px) {
   .nm-hero-inner {
-    padding: 7rem 1.5rem 4.5rem;
+    padding: 7rem 1.5rem 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nm-hero-inner {
+    align-items: center;
+    padding: 7rem 1.5rem 8.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .nm-hero-inner {
-    padding: 7.25rem 1.5rem 5.5rem;
+    padding: 7.25rem 1.5rem 9rem;
   }
 }
 
@@ -466,8 +480,31 @@ li {
   position: relative;
   z-index: 3;
   width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+  padding: 0 1rem;
   flex-shrink: 0;
-  margin-top: auto;
+}
+
+@media (min-width: 640px) {
+  .nm-hero-bottom {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nm-hero-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1.5rem;
+    margin: 0;
+    pointer-events: none;
+  }
+
+  .nm-hero-bottom > * {
+    pointer-events: auto;
+  }
 }
 
 .hero-trust-wrap {
@@ -1295,20 +1332,22 @@ li {
 
 /* ——— Hero bottom credentials ——— */
 .nm-hero-proof {
-  background: #fff;
-  border-top: 1px solid rgba(18, 75, 56, 0.1);
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+  background: color-mix(in srgb, var(--color-mist) 55%, #fff);
+  border: 1px solid rgba(18, 75, 56, 0.1);
+  border-radius: 1.125rem;
+  box-shadow:
+    0 1px 2px rgba(18, 75, 56, 0.04),
+    0 14px 36px rgba(18, 75, 56, 0.08);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
 }
 
 .nm-hero-proof-inner {
-  max-width: var(--max-width-content);
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-@media (min-width: 640px) {
-  .nm-hero-proof-inner {
-    padding: 0 1.5rem;
-  }
+  max-width: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nm-hero-proof-grid {
