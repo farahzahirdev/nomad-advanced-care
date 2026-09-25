@@ -3,7 +3,6 @@ import Problem from "@/components/Problem";
 import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
 import WhyNomad from "@/components/WhyNomad";
-import Credentials from "@/components/Credentials";
 import Testimonials from "@/components/Testimonials";
 import MeetTeam from "@/components/MeetTeam";
 import Providers from "@/components/Providers";
@@ -22,7 +21,6 @@ export default function Home() {
       <Services />
       <HowItWorks />
       <WhyNomad />
-      <Credentials />
       <Testimonials />
       <Providers />
       <MeetTeam />

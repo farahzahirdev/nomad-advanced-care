@@ -1,5 +1,6 @@
 import Image from "next/image";
 import TrustBar from "@/components/TrustBar";
+import Credentials from "@/components/Credentials";
 import {
   BOOKING_SECTION_ID,
   IMAGES,
@@ -10,56 +11,58 @@ import {
 export default function Hero() {
   return (
     <section aria-labelledby="hero-heading" className="nm-hero">
-      <div className="nm-hero-bg" aria-hidden>
-        <Image
-          src={IMAGES.hero}
-          alt=""
-          fill
-          priority
-          quality={92}
-          sizes="100vw"
-          className="nm-hero-img"
-        />
-      </div>
-      <div className="nm-hero-wash" aria-hidden />
+      <div className="nm-hero-media">
+        <div className="nm-hero-bg" aria-hidden>
+          <Image
+            src={IMAGES.hero}
+            alt=""
+            fill
+            priority
+            quality={92}
+            sizes="100vw"
+            className="nm-hero-img"
+          />
+        </div>
+        <div className="nm-hero-wash" aria-hidden />
 
-      <div className="nm-hero-inner">
-        <div className="nm-hero-copy">
-          <p className="nm-hero-kicker">
-            Greater Seattle · At Home or In-Clinic
-            <span className="nm-hero-kicker-line" aria-hidden />
-          </p>
+        <div className="nm-hero-inner">
+          <div className="nm-hero-copy">
+            <p className="nm-hero-kicker">
+              Greater Seattle · At Home or In-Clinic
+              <span className="nm-hero-kicker-line" aria-hidden />
+            </p>
 
-          <h1 id="hero-heading" className="nm-hero-title">
-            <span className="nm-hero-title-line">Advanced Mental</span>
-            <span className="nm-hero-title-second">
-              <span className="nm-hero-title-accent">Health Treatment</span>
-            </span>
-          </h1>
+            <h1 id="hero-heading" className="nm-hero-title">
+              <span className="nm-hero-title-line">Advanced Mental</span>
+              <span className="nm-hero-title-second">
+                <span className="nm-hero-title-accent">Health Treatment</span>
+              </span>
+            </h1>
 
-          <p className="nm-hero-lede">
-            Real relief for depression, anxiety &amp; PTSD. Evidence-based care at home or in-clinic.
-            When medication and talk therapy haven&apos;t been enough, we&apos;re here.
-          </p>
+            <p className="nm-hero-lede">
+              Real relief for depression, anxiety &amp; PTSD. Evidence-based care at home or in-clinic.
+              When medication and talk therapy haven&apos;t been enough, we&apos;re here.
+            </p>
 
-          <div className="nm-hero-actions">
-            <a href={`#${BOOKING_SECTION_ID}`} className="nm-hero-btn-primary">
-              <CalendarIcon />
-              Book your Free Consultation
-              <ArrowIcon />
-            </a>
-            <a href={PHONE_HREF} className="nm-hero-btn-secondary">
-              <PhoneIcon />
-              Call {PHONE_NUMBER}
-            </a>
+            <TrustBar />
+
+            <div className="nm-hero-actions">
+              <a href={`#${BOOKING_SECTION_ID}`} className="nm-hero-btn-primary">
+                <CalendarIcon />
+                Book your Free Consultation
+                <ArrowIcon />
+              </a>
+              <a href={PHONE_HREF} className="nm-hero-btn-secondary">
+                <PhoneIcon />
+                Call {PHONE_NUMBER}
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="nm-hero-bottom">
-        <div className="nm-hero-bottom-inner">
-          <TrustBar />
-        </div>
+        <Credentials />
       </div>
     </section>
   );

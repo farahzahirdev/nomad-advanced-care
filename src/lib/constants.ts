@@ -43,7 +43,7 @@ export const CALENDAR_SRC = `https://go.4tms.com/widget/booking/${CALENDAR_ID}`;
 export const CALENDAR_IFRAME_ID = `${CALENDAR_ID}_1790263686857`;
 
 export const HERO_TRUST_ITEMS = [
-  { title: "Accepted by Most Major Plans", icon: "shield" as const },
+  { title: "Most Major Insurance Plans", icon: "shield" as const },
   { title: "Physician Oversight & RN Monitoring", icon: "doctor" as const },
   { title: "Most Patients Start Within a Week", icon: "clock" as const },
   { title: "Greater Seattle & Surrounding Counties", icon: "pin" as const },
@@ -124,10 +124,10 @@ export const WHY_NOMAD = [
 ] as const;
 
 export const TRUST_ITEMS = [
-  { label: "5.0 Google rating", detail: "Based on 100+ reviews" },
-  { label: "LegitScript Certified", detail: "Trusted & compliant" },
-  { label: "ASKP3 Member", detail: "Quality. Accountability. Better outcomes." },
-  { label: "HIPAA-Compliant", detail: "Your information is safe with us" },
+  { label: "5.0 Google Rating", detail: "Based on 100+ reviews" },
+  { label: "LegitScript Certified", detail: "Trusted & Compliant" },
+  { label: "ASKP3 Member", detail: "Quality. Accountability. Better Outcomes." },
+  { label: "HIPAA-Compliant", detail: "Your information is safe with us." },
 ] as const;
 
 export const TESTIMONIALS = [
