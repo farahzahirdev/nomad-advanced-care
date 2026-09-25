@@ -380,6 +380,12 @@ li {
   }
 }
 
+@media (min-width: 1024px) {
+  .nm-hero-media {
+    min-height: min(100vh, 900px);
+  }
+}
+
 .nm-hero-bg {
   position: absolute;
   inset: 0;
