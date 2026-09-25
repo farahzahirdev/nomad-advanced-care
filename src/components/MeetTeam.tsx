@@ -65,10 +65,10 @@ function VideoCard({
             >
               <span className="nm-video-play-icon" aria-hidden />
             </button>
+            <figcaption className="nm-video-cap">{caption}</figcaption>
           </>
         )}
       </div>
-      <figcaption className="nm-video-cap">{caption}</figcaption>
     </figure>
   );
 }
