@@ -549,7 +549,7 @@ li {
   width: 1.35rem;
   height: 1.35rem;
   margin-top: 0.12rem;
-  color: var(--color-mint-deep);
+  color: var(--color-forest);
 }
 
 .hero-trust-title {
@@ -592,14 +592,14 @@ li {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-mint-deep);
+  color: var(--color-forest);
 }
 
 .nm-hero-kicker-line {
   display: block;
   width: 3.5rem;
   height: 1.5px;
-  background: var(--color-mint);
+  background: var(--color-forest);
 }
 
 .nm-hero-title {

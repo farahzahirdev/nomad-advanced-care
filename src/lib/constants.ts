@@ -1,9 +1,9 @@
 /** Bump when replacing public/images so caches refresh */
-const IMG_V = "20260925d";
+const IMG_V = "20260925e";
 
 const img = (publicPath: string) => `${publicPath}?v=${IMG_V}`;
 
-export const LOGO_URL = img("/images/logo-green.png");
+export const LOGO_URL = img("/images/logo-green.jpeg");
 export const LOGO_WHITE_URL = img("/images/logo-white.webp");
 
 export const IMAGES = {
