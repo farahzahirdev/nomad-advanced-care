@@ -12,8 +12,8 @@ import {
 
 const NAV_ITEMS = [
   { href: "#services", label: "Services" },
-  { href: "#spravato", label: "Spravato" },
   { href: "#tms", label: "TMS" },
+  { href: "#spravato", label: "Spravato" },
   { href: "#how-it-works", label: "How it works" },
   { href: "#faq", label: "FAQ" },
 ] as const;

@@ -72,13 +72,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#spravato" className="transition-colors hover:text-mint">
-                  Spravato
+                <a href="#tms" className="transition-colors hover:text-mint">
+                  TMS
                 </a>
               </li>
               <li>
-                <a href="#tms" className="transition-colors hover:text-mint">
-                  TMS
+                <a href="#spravato" className="transition-colors hover:text-mint">
+                  Spravato
                 </a>
               </li>
               <li>
