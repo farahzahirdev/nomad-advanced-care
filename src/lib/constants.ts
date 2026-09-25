@@ -1,5 +1,5 @@
 /** Bump when replacing public/images so caches refresh */
-const IMG_V = "20260925f";
+const IMG_V = "20260925g";
 
 const img = (publicPath: string) => `${publicPath}?v=${IMG_V}`;
 
@@ -280,11 +280,13 @@ export const TEAM_VIDEOS = [
     id: "b_4H_PjZG94",
     title: "Meet Nomad Therapeutics",
     caption: "Dr. Alexander Gill and Trysten, RN, on who Nomad is for · 0:54",
+    thumbnail: img("/images/thumbnail1.jpeg"),
   },
   {
     id: "b_DTwhWrB7M",
     title: "What a home visit with Nomad Therapeutics looks like",
     caption: "Trysten, RN, walks through a supervised home session · 1:13",
+    thumbnail: img("/images/thumbnail2.jpeg"),
   },
 ] as const;
 

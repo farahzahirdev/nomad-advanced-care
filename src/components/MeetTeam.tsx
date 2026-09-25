@@ -29,13 +29,14 @@ function VideoCard({
   id,
   title,
   caption,
+  thumbnail,
 }: {
   id: string;
   title: string;
   caption: string;
+  thumbnail: string;
 }) {
   const [playing, setPlaying] = useState(false);
-  const thumb = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
 
   return (
     <figure className="nm-video">
@@ -50,12 +51,12 @@ function VideoCard({
         ) : (
           <>
             <Image
-              src={thumb}
+              src={thumbnail}
               alt=""
               fill
               sizes="(max-width: 900px) 100vw, 50vw"
               className="object-cover"
-              unoptimized
+              quality={90}
             />
             <button
               type="button"
