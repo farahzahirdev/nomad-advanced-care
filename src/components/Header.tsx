@@ -12,9 +12,9 @@ import {
 
 const NAV_ITEMS = [
   { href: "#services", label: "Services" },
+  { href: "#spravato", label: "Spravato" },
+  { href: "#tms", label: "TMS" },
   { href: "#how-it-works", label: "How it works" },
-  { href: "#why-nomad", label: "Why Nomad" },
-  { href: "#providers", label: "Providers" },
   { href: "#faq", label: "FAQ" },
 ] as const;
 

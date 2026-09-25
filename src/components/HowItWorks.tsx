@@ -14,7 +14,8 @@ export default function HowItWorks() {
                 From first call to first session, in days, not months
               </h2>
               <p className="text-lead mt-4">
-                Three clear steps. No referral required. Most patients begin within a week.
+                Three clear steps whether you&apos;re exploring medication management, Spravato, or
+                TMS. No referral required. Most patients begin within a week.
               </p>
             </div>
 
@@ -38,7 +39,7 @@ export default function HowItWorks() {
             <div className="how-split-media-frame">
               <Image
                 src={IMAGES.howItWorks}
-                alt="Patient receiving TMS treatment at Nomad Therapeutics"
+                alt="Nomad clinician welcoming a patient for care"
                 fill
                 quality={90}
                 sizes="(max-width: 1024px) 100vw, 48vw"

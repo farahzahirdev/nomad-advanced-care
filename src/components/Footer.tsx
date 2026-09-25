@@ -67,13 +67,18 @@ export default function Footer() {
             <p className="text-xs font-bold uppercase tracking-[0.14em] text-mint">Explore</p>
             <ul className="mt-4 space-y-2 text-sm text-white/85">
               <li>
-                <a href="#providers" className="transition-colors hover:text-mint">
-                  Providers
+                <a href="#services" className="transition-colors hover:text-mint">
+                  Services
                 </a>
               </li>
               <li>
-                <a href="#services" className="transition-colors hover:text-mint">
-                  Services
+                <a href="#spravato" className="transition-colors hover:text-mint">
+                  Spravato
+                </a>
+              </li>
+              <li>
+                <a href="#tms" className="transition-colors hover:text-mint">
+                  TMS
                 </a>
               </li>
               <li>

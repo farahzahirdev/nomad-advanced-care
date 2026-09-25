@@ -19,9 +19,11 @@ export default function Services() {
         <ul className="nm-services-grid mt-12 list-none p-0">
           {SERVICES.map((service) => (
             <li key={service.title} className="nm-service">
-              <span className="nm-service-badge">{service.badge}</span>
-              <h3 className="nm-service-title">{service.title}</h3>
-              <p className="nm-service-desc">{service.description}</p>
+              <a href={service.href} className="nm-service-link">
+                <span className="nm-service-badge">{service.badge}</span>
+                <h3 className="nm-service-title">{service.title}</h3>
+                <p className="nm-service-desc">{service.description}</p>
+              </a>
             </li>
           ))}
         </ul>

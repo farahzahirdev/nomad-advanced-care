@@ -1,5 +1,5 @@
 /** Bump when replacing public/images so caches refresh */
-const IMG_V = "20260925e";
+const IMG_V = "20260925f";
 
 const img = (publicPath: string) => `${publicPath}?v=${IMG_V}`;
 
@@ -8,7 +8,9 @@ export const LOGO_WHITE_URL = img("/images/logo-white.webp");
 
 export const IMAGES = {
   hero: img("/images/hero-seattle.jpg"),
-  howItWorks: img("/images/how-it-works.jpg"),
+  howItWorks: img("/images/nurse-home.jpg"),
+  spravato: img("/images/spravato.jpeg"),
+  tms: img("/images/how-it-works.jpg"),
   whyCare: img("/images/nurse-care.jpg"),
   forest: img("/images/forest-path.jpg"),
   seattle: img("/images/seattle-kayak.jpg"),
@@ -55,20 +57,73 @@ export const SERVICES = [
     description:
       "Physician-led medication plans for depression, anxiety, and PTSD, adjusted carefully so treatment fits your life.",
     badge: "Physician-led",
+    href: "#services",
   },
   {
     title: "Spravato (Esketamine)",
     description:
       "FDA-approved nasal spray for treatment-resistant depression. Accepted by most major insurance plans. In-clinic with registered nurse monitoring.",
     badge: "Accepted by most major plans",
+    href: "#spravato",
   },
   {
     title: "TMS Therapy",
     description:
       "Non-medication magnetic pulse therapy for depression. Accepted by most major insurance plans. No anesthesia. Drive yourself home.",
     badge: "Accepted by most major plans",
+    href: "#tms",
   },
 ] as const;
+
+export const SPRAVATO = {
+  label: "Spravato",
+  title: "FDA-approved Spravato for treatment-resistant depression",
+  lede: "Esketamine nasal spray, delivered in-clinic with registered nurse monitoring and physician oversight, when standard antidepressants haven\u2019t been enough.",
+  image: IMAGES.spravato,
+  imageAlt: "Registered nurse providing supervised in-clinic Spravato care",
+  points: [
+    {
+      title: "FDA-approved for TRD",
+      description:
+        "Spravato (esketamine) is FDA-approved for treatment-resistant depression when used as labeled, under clinical supervision.",
+    },
+    {
+      title: "Nurse-monitored sessions",
+      description:
+        "Every visit is supervised in clinic. A registered nurse stays with you and monitors vitals for the full observation window.",
+    },
+    {
+      title: "Accepted by most major plans",
+      description:
+        "We help verify coverage and share a clear Good Faith Estimate before you begin.",
+    },
+  ],
+} as const;
+
+export const TMS = {
+  label: "TMS Therapy",
+  title: "TMS when you want a non-medication path forward",
+  lede: "Targeted magnetic pulses for depression, without anesthesia. Most major insurance plans accepted. You can drive yourself home after treatment.",
+  image: IMAGES.tms,
+  imageAlt: "Patient receiving TMS treatment at Nomad Therapeutics",
+  points: [
+    {
+      title: "Non-medication treatment",
+      description:
+        "TMS uses magnetic pulses to stimulate areas of the brain involved in mood regulation, without systemic medication effects.",
+    },
+    {
+      title: "Outpatient and practical",
+      description:
+        "Sessions are in-clinic. No anesthesia is required, and most people return to their day afterward.",
+    },
+    {
+      title: "Accepted by most major plans",
+      description:
+        "Coverage support and transparent estimates so you know what to expect before the first session.",
+    },
+  ],
+} as const;
 
 export const LOCATIONS = [
   { name: "Seattle & Shoreline", note: "Clinic + regional care" },
